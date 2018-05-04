@@ -15,6 +15,17 @@
           "computed": false
         }
       },
+      "onChart": {
+        "type": {
+          "name": "func"
+        },
+        "required": false,
+        "description": "Get ref to chart",
+        "defaultValue": {
+          "value": "null",
+          "computed": false
+        }
+      },
       "options": {
         "type": {
           "name": "object"
@@ -31,27 +42,27 @@
           "name": "enum",
           "value": [
             {
-              "value": "'Bar'",
+              "value": "'bar'",
               "computed": false
             },
             {
-              "value": "'Doughnut'",
+              "value": "'doughnut'",
               "computed": false
             },
             {
-              "value": "'Line'",
+              "value": "'line'",
               "computed": false
             },
             {
-              "value": "'Pie'",
+              "value": "'pie'",
               "computed": false
             },
             {
-              "value": "'PolarArea'",
+              "value": "'polarArea'",
               "computed": false
             },
             {
-              "value": "'Radar'",
+              "value": "'radar'",
               "computed": false
             }
           ]
