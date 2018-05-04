@@ -1,0 +1,96 @@
+{
+  "TheChart": {
+    "description": "Chart for the-components",
+    "displayName": "TheChart",
+    "methods": [],
+    "props": {
+      "data": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Chart data",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      },
+      "options": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Chart options",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      },
+      "type": {
+        "type": {
+          "name": "enum",
+          "value": [
+            {
+              "value": "'Bar'",
+              "computed": false
+            },
+            {
+              "value": "'Doughnut'",
+              "computed": false
+            },
+            {
+              "value": "'Line'",
+              "computed": false
+            },
+            {
+              "value": "'Pie'",
+              "computed": false
+            },
+            {
+              "value": "'PolarArea'",
+              "computed": false
+            },
+            {
+              "value": "'Radar'",
+              "computed": false
+            }
+          ]
+        },
+        "required": true,
+        "description": ""
+      },
+      "height": {
+        "defaultValue": {
+          "value": "300",
+          "computed": false
+        },
+        "required": false
+      },
+      "width": {
+        "defaultValue": {
+          "value": "300",
+          "computed": false
+        },
+        "required": false
+      }
+    }
+  },
+  "TheChartStyle": {
+    "description": "Style for TheChart",
+    "displayName": "TheChartStyle",
+    "methods": [],
+    "props": {
+      "options": {
+        "type": {
+          "name": "object"
+        },
+        "required": false,
+        "description": "Style options",
+        "defaultValue": {
+          "value": "{}",
+          "computed": false
+        }
+      }
+    }
+  }
+}
