@@ -2,14 +2,16 @@
 /**
  * Chart for the-components
  * @module the-chart
+ * @version 1.0.2
  */
 'use strict'
 
 import TheChart from './TheChart'
 import TheChartStyle from './TheChartStyle'
 
+export default TheChat
+
 export {
   TheChart,
-  TheChartStyle,
+  TheChartStyle
 }
-
