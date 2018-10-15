@@ -46,7 +46,7 @@ class TheChart extends React.Component {
       width,
     } = props
     return (
-      <div {...htmlAttributesFor(props, {except: ['className']})}
+      <div {...htmlAttributesFor(props, {except: ['className', 'data']})}
            {...eventHandlersFor(props, {except: []})}
            className={c('the-chart', className)}
       >
