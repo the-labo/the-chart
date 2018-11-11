@@ -7,8 +7,8 @@ import { asStyleData } from 'the-component-util'
 import { TheStyle } from 'the-style'
 
 /** Style for TheChart */
-const TheChartStyle = ({className, id, options}) => (
-  <TheStyle {...{id}}
+const TheChartStyle = ({ className, id, options }) => (
+  <TheStyle {...{ id }}
             className={c('the-chart-style', className)}
             styles={TheChartStyle.data(options)}
   />
@@ -25,7 +25,7 @@ TheChartStyle.defaultProps = {
 }
 
 TheChartStyle.data = (options) => {
-  const {ThemeValues} = TheStyle
+  const { ThemeValues } = TheStyle
   const {
     dominantColor = ThemeValues.dominantColor,
   } = options

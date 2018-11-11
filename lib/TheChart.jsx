@@ -18,7 +18,7 @@ class TheChart extends React.Component {
   }
 
   componentDidMount () {
-    const {data, onChat, options, type} = this.props
+    const { data, onChat, options, type } = this.props
     const canvas = this.canvasRef.current
     const chart = this.chart = new Chart(canvas, {
       data, options, type,
@@ -27,15 +27,15 @@ class TheChart extends React.Component {
   }
 
   componentDidUpdate (prevProps) {
-    const {chart, props} = this
-    const {data, options} = props
+    const { chart, props } = this
+    const { data, options } = props
     chart.data = data
     chart.options = options
     chart.update()
   }
 
   render () {
-    const {props} = this
+    const { props } = this
     const {
       children,
       className,
@@ -46,8 +46,8 @@ class TheChart extends React.Component {
       width,
     } = props
     return (
-      <div {...htmlAttributesFor(props, {except: ['className', 'data']})}
-           {...eventHandlersFor(props, {except: []})}
+      <div {...htmlAttributesFor(props, { except: ['className', 'data'] })}
+           {...eventHandlersFor(props, { except: [] })}
            className={c('the-chart', className)}
       >
         <canvas className='the-chart-canvas'
